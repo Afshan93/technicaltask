@@ -1,15 +1,58 @@
-# Deployment of project on Linux Server 
+# Development of Project 
 This project is a simple employee user story for application of job.
 The Project is developed using python,django as frontend while Postgresql as backend.
+Intially it is developed and deployed  on windows platform while at end of this document proces is explained to deploy this project on Linux Server.
+Resource: https://www.c-sharpcorner.com/article/django-crud-createretriveupdatedelete-record-using-django-class-based-view2/
 
 ## Minimum Requirements
-You need  Linux Os installed (ubuntu, Debian)
+You need   Os installed (windows, ubuntu, Debian)
 Python 3.8  , it will work for any version above 3
 Django 3.0,    
-Postgresql,
+Postgresql, refer to https://www.postgresql.org/
 
 ## Django Introduction 
 Django is a python web framework for developers looking for a faster way to build web applications and with less code. Refer https://www.djangoproject.com/ for more help
+
+## Commands for installations 
+D:\Python>python --version       
+D:\Python>python -m venv venv     
+D:\Python>venv\scripts\activate      
+(venv) D:\Python>pip install django==3.0     
+## Creating Project in Django
+(venv) D:\Python>django-admin startproject employee_project        
+(venv) D:\Python>cd employee_project       
+## Installing Psycopg2  to use Postgresql with Django    
+(venv) D:\Python\employee_project>pip install Psycopg2     Refer to https://www.psycopg.org/
+## Aditional apps
+(venv) D:\Python\employee_project>pip install pyautogui   refer to https://pyautogui.readthedocs.io/en/latest/
+(venv) D:\Python\employee_project>pip install Pillow
+## Run Server 
+After seeting the database stting in settings .py
+(venv) D:\Python\employee_project>python manage.py runserver    
+
+
+## Database 
+  Go to pgadmin, click on the server, right click on databases and create database , runscript given in createdatabase.txt and follow the steps given. As a shortcur db script is also provided to copy directly. Refer to  https://www.youtube.com/watch?v=e1MwsT5FJRQ 
+  
+##  Starting  Project
+(venv) D:\Python\employee_project>python manage.py startapp employee_register    
+##  Migrating the database
+(venv) D:\Python\employee_project>python manage.py sqlmigrate employee_register
+(venv) D:\Python\employee_project>python manage.py migrate
+
+##  Installed Forms 
+(venv) D:\Python\employee_project>pip install django-crispy-forms      
+
+## Creating Models, Views and Urls
+As django is framework which utilizes models, views and controllers , hence i  created the models by introducing two  different classes of employee and German language.
+3 different html templates were used under forms. Urls were updated for every single path we need to redirect.
+
+## Final Results     
+visit http://127.0.0.1:8000/employee/4/ to see required form.     
+
+
+
+## If local installtion is required for linux, Step by step details are mentioned below
 
 ## Install Ubuntu
 Ubunto or Debian is recommended . Refer to https://ubuntu.com/tutorials/install-ubuntu-desktop#2-requirements  for ubuntu installation step by step. This project is tested on windows.
