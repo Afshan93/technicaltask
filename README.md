@@ -94,7 +94,7 @@ $  cd venv
   Go to pgadmin, click on the server, right click on databases and create database , runscript given in createdatabase.txt and follow the steps given.
   As a shortcur db script is also provided to copy directly.      
   
-  Copy all the script files to employee_project      
+  Clone all the script files to employee_project      
   and then visit http://127.0.0.1:8000/employee/4/  to see required form.      
   
   
