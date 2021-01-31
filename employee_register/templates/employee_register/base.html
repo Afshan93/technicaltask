@@ -10,7 +10,39 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
+</body>{% extends "admin/base.html" %}
 
+{% block title %}{{ title }} | {{ site_title|default:_('Our Job Wizard') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Our Job Wizard') }}</a></h1>
+{% endblock %}
+
+{% block extrastyle %} 
+
+<style>
+
+h1{
+  color: #000;
+}
+.module h2, .module caption, .inline-group h2{
+  background: #aabbdd;
+  color: #000;
+  height: 40px;
+}
+a.section:link{
+  color: #000;
+}
+a:link{
+  color: #000;
+}
+</style>
+
+            {% endblock %}
+
+
+
+{% block nav-global %}{% endblock %}
 <body>
     <div class="container">
         <div class="col-md-10 offset-md-1 mt-5">
@@ -34,6 +66,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-</body>
 
 </html>
