@@ -15,7 +15,7 @@ Django is a python web framework for developers looking for a faster way to buil
 Ubunto or Debian is recommended . Refer to https://ubuntu.com/tutorials/install-ubuntu-desktop#2-requirements  for ubuntu installation step by step. This project is tested on windows.
 
 ## Installation  commands
- $ sudo apt-get install python3.8 (<-- two spaces)
+ $ sudo apt-get install python3.8
  python --version
 
 ### Setting up Virtual Environment
