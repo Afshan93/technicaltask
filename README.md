@@ -52,7 +52,7 @@ visit http://127.0.0.1:8000/employee/4/ to see required form.
 
 
 
-## If local installtion is required for linux, Step by step details are mentioned below
+## If local installation is required for linux, Step by step details are mentioned below
 
 ## Install Ubuntu
 Ubunto or Debian is recommended . Refer to https://ubuntu.com/tutorials/install-ubuntu-desktop#2-requirements  for ubuntu installation step by step. This project is tested on windows.
