@@ -1,14 +1,14 @@
-# Development of Project 
-This project is a simple employee user story for application of job.
-The Project is developed using python,django as frontend while Postgresql as backend.
+# Development of Project    
+This project is a simple employee user story for application of job.    
+The Project is developed using python,django as frontend while Postgresql as backend.     
 Intially it is developed and deployed  on windows platform while at end of this document proces is explained to deploy this project on Linux Server.
 Resource: https://www.c-sharpcorner.com/article/django-crud-createretriveupdatedelete-record-using-django-class-based-view2/
 
 ## Minimum Requirements
-You need   Os installed (windows, ubuntu, Debian)
-Python 3.8  , it will work for any version above 3
-Django 3.0,    
-Postgresql, refer to https://www.postgresql.org/
+You need   Os installed (windows, ubuntu, Debian)       
+Python 3.8  , it will work for any version above 3        
+Django 3.0,                     
+Postgresql, refer to https://www.postgresql.org/       
 
 ## Django Introduction 
 Django is a python web framework for developers looking for a faster way to build web applications and with less code. Refer https://www.djangoproject.com/ for more help
@@ -23,7 +23,7 @@ D:\Python>venv\scripts\activate
 (venv) D:\Python>cd employee_project       
 ## Installing Psycopg2  to use Postgresql with Django    
 (venv) D:\Python\employee_project>pip install Psycopg2     Refer to https://www.psycopg.org/
-## Aditional apps
+## Additional apps
 (venv) D:\Python\employee_project>pip install pyautogui   refer to https://pyautogui.readthedocs.io/en/latest/
 (venv) D:\Python\employee_project>pip install Pillow
 ## Run Server 
@@ -32,7 +32,7 @@ After seeting the database stting in settings .py
 
 
 ## Database 
-  Go to pgadmin, click on the server, right click on databases and create database , runscript given in createdatabase.txt and follow the steps given. As a shortcur db script is also provided to copy directly. Refer to  https://www.youtube.com/watch?v=e1MwsT5FJRQ 
+ Go to pgadmin, click on the server, right click on databases and create database , runscript given in createdatabase.txt and follow the steps given. As a shortcur db script is also provided to copy directly. Refer to  https://www.youtube.com/watch?v=e1MwsT5FJRQ 
   
 ##  Starting  Project
 (venv) D:\Python\employee_project>python manage.py startapp employee_register    
