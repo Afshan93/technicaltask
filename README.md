@@ -18,7 +18,7 @@ Ubunto or Debian is recommended . Refer to https://ubuntu.com/tutorials/install-
 $ sudo apt-get install python3.8
 python --version
 
-## Setting up Virtual Environment
+### Setting up Virtual Environment
 $ sudo pip install virtualenv
 $  virtualenv -p python3 venv
 $  cd venv
