@@ -3,8 +3,8 @@ This project is a simple employee user story for application of job.
 The Project is developed using python,django as frontend while Postgresql as backend.
 
 ## Minimum Requirements
-You got Linux Os installed (ubuntu, Debian)
-Python 3.8  , it will work for anversion above 3
+You need  Linux Os installed (ubuntu, Debian)
+Python 3.8  , it will work for any version above 3
 Django 3.0,    
 Postgresql,
 
